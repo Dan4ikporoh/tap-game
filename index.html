@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Хомяк Тапалка</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-area">
+        <div class="score-container">
+            <img src="coin.png" alt="coin" class="coin-icon">
+            <span id="score">0</span>
+        </div>
+        <div id="hamster-container">
+            <img src="hamster.png" alt="Hamster" id="hamster">
+        </div>
+        <button id="withdraw-btn">Вывести</button>
+    </div>
+
+    <!-- Модальное окно для вывода (изначально скрыто) -->
+    <div id="withdraw-modal" class="modal-hidden">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Вывод коинов</h2>
+            <form id="withdraw-form">
+                <label for="coins-input">Сколько коинов вывести?</label>
+                <input type="number" id="coins-input" placeholder="Например, 1000">
+                <p class="conversion-text">Вы получите: <span id="money-display">0</span> $</p>
+                <p class="balance-text">Ваш баланс: <span id="balance-display">0</span></p>
+
+                <label for="nickname-input">Ваш никнейм для получения</label>
+                <input type="text" id="nickname-input" placeholder="@ваш_ник">
+                
+                <button type="submit">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
