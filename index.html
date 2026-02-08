@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тапалка</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="score-display">
+            <img src="coin.png" class="coin-icon" alt="coin">
+            <span id="score">0</span>
+        </div>
+        <div class="click-area">
+            <!-- Сюда можно поставить картинку вашего бонуса/монетки -->
+            <img src="big_coin.png" id="main-coin" class="main-coin-img" alt="Tap me!">
+        </div>
+        <div class="user-info">
+            <p id="user-data">Загрузка данных пользователя...</p>
+        </div>
+    </div>
+
+    <!-- Подключаем скрипт Telegram -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <!-- Подключаем нашу логику -->
+    <script src="script.js"></script>
+</body>
+</html>
